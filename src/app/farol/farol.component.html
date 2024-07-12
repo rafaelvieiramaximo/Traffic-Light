@@ -1,11 +1,11 @@
 <div class="container">
     <div class="trafficlight">
         <div class="panel">
-            <div class="light light-off"></div>
-            <div class="light light-off"></div>
-            <div class="light light-off"></div>
+            <div class="light" [ngClass]="light1"></div>
+            <div class="light" [ngClass]="light2"></div>
+            <div class="light" [ngClass]="light3"></div>
         </div>
     </div>
-    <button>Clique aqui!!</button>
+    <button (click)="changeLight()">Clique aqui!!</button>
 </div>
 
